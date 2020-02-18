@@ -1,4 +1,26 @@
-.banner-image {
-    width: 100%;
+body, html {
+    height: 100%;
     margin: 0px;
+}
+
+header {
+    height: 100%;
+    position: relative;
+}
+
+.intro-img {
+    background-image: url("Pictures/Mt Mitchell.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.intro-caption {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
 }
