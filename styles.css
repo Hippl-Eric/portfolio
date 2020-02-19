@@ -3,9 +3,15 @@ body, html {
     margin: 0px;
 }
 
-header {
+
+body.container-fluid {
+    padding: 0px; /* Remove Bootstrap padding*/
+}
+
+header.container-fluid {
     height: 100%;
     position: relative;
+    padding: 0px;
 }
 
 .intro-img {
