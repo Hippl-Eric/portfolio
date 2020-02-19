@@ -3,30 +3,45 @@ body, html {
     margin: 0px;
 }
 
-
-body.container-fluid {
+.container-fluid {
     padding: 0px; /* Remove Bootstrap padding*/
 }
 
-header.container-fluid {
-    height: 100%;
+/* Element max vertical height of viewport*/
+.max-vert {
+    height: 100vh;
     position: relative;
-    padding: 0px;
+    text-align: center;
 }
 
-.intro-img {
-    background-image: url("Pictures/Mt Mitchell.jpg");
+/* Position horizontal center, vertical middle */
+.center-middle {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Position horizontal left, vertical middle */
+.left-middle {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Fit a background image to center, full height of element */
+.img-full {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
 
-.intro-caption {
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-
+/* Background image for intro section */
+.intro-img {
+    background-image: url("Pictures/Mt Mitchell.jpg");
 }
