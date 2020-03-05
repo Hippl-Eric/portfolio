@@ -3,6 +3,10 @@ body, html {
     margin: 0px;
 }
 
+h1, h3 {
+    text-align: center;
+}
+
 .container-fluid {
     padding: 0px; /* Remove Bootstrap padding*/
 }
@@ -11,26 +15,21 @@ body, html {
 .max-vert {
     height: 100vh;
     position: relative;
-    text-align: center;
 }
 
-/* Position horizontal center, vertical middle */
+/* Position text center, vertical middle */
 .center-middle {
-    margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-/* Position horizontal left, vertical middle */
-.left-middle {
-    margin: 0;
-    position: absolute;
-    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.content-section {
+    padding-top: 100px;
 }
 
 /* Fit a background image to center, full height of element */
