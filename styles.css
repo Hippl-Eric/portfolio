@@ -11,6 +11,10 @@ h1, h3 {
     padding: 0px; /* Remove Bootstrap padding*/
 }
 
+.col-sm-6, .col-lg-3 {
+    padding-bottom: 50px; /* Add padding to Bootstrap columns */
+}
+
 /* Element max vertical height of viewport*/
 .max-vert {
     height: 100vh;
@@ -19,7 +23,7 @@ h1, h3 {
 
 /* Position text center, vertical middle */
 .center-middle {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 0;
     width: 100%;
@@ -43,4 +47,17 @@ h1, h3 {
 /* Background image for intro section */
 .intro-img {
     background-image: url("Pictures/Mt Mitchell.jpg");
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    margin: 30px;
+    background-color: blue;
+}
+
+.stack-icon {
+    font-size: 125px;
+    margin: 30px;
 }
