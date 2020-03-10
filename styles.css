@@ -5,13 +5,14 @@ body, html {
 
 h1, h3 {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .container-fluid {
     padding: 0px; /* Remove Bootstrap padding*/
 }
 
-.col-sm-6, .col-lg-3 {
+.col-sm-6, .col-lg-3, .col-lg-4, .col-lg-8 {
     padding-bottom: 50px; /* Add padding to Bootstrap columns */
 }
 
@@ -59,4 +60,10 @@ h1, h3 {
 
 .stack-icon {
     font-size: 125px;
+}
+
+#courses img {
+    width: 400px;
+    height: auto;
+    border: 1px solid lightgray;
 }
