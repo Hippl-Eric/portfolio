@@ -30,6 +30,7 @@ h1, h3 {
 
 .content-section {
     padding-top: 100px;
+    min-height: 100vh;
 }
 
 /* Fit a background image to center, full height of element */
@@ -63,3 +64,6 @@ h1, h3 {
     border: 1px solid lightgray;
 }
 
+.navbar {
+    text-align: center!;
+}
