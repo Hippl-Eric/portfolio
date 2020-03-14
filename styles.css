@@ -33,6 +33,14 @@ h1, h3 {
     min-height: 100vh;
 }
 
+.primary {
+    background-color: gray;
+}
+
+.secondary {
+    background-color: coral;
+}
+
 /* Fit a background image to center, full height of element */
 .img-full {
     background-position: center;
