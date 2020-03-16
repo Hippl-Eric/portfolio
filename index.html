@@ -15,6 +15,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+        <!-- Icon -->
+        <script src="https://kit.fontawesome.com/c59d2e740b.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="styles.css">
         <!-- Icons for programming languages, https://konpa.github.io/devicon/ -->
@@ -27,10 +29,18 @@
     <body class="container-fluid">
 
         <header class="container-fluid max-vert">
-            <div id="intro" class="container-fluid d-flex justify-content-center align-items-center img-full intro-img">
-                <div class="caption text-center">
-                    <p>Eric Hippler</p>
-                    <p>From Civil to Software | Engineer<br>building dynamic Web Applications</p>
+            <div id="intro" class="container-fluid img-full intro-img">
+                <div class="height-max d-flex align-items-center flex-column">
+                    
+                    <div class="mt-auto mb-auto caption text-center ">
+                        <p>Eric Hippler</p>
+                        <p>From Civil to Software | Engineer<br>building dynamic Web Applications</p>
+                    </div>
+                    <div class="mt-auto text-center" style="color:crimson">
+                        <a href="#summary">
+                            <i class="fas fa-chevron-down fa-3x"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -57,8 +67,8 @@
         </nav>
 
         <main class="container-fluid">
-            <div class="content-section primary">
-                <div id="summary" class="container-lg">
+            <div id="summary" class="content-section primary">
+                <div class="container-lg">
                     <div class="container-fluid d-flex justify-content-center">
                         <div class="text-center">
                             <p>Motivated career-changer excited to make the jump from civil to software engineering. By adding technical programming knowledge to established management and communication skills, I intend to become a well-rounded, self-directed software developer. Passionate for web development by its accessibility and ease of use for the user, I enjoy writing code that can reach users across the world with just one "push".</p>
@@ -69,10 +79,10 @@
                 </div>
             </div>
 
-            <div class="content-section secondary">
-                <div id="stack" class="container-lg content-section">
+            <div id="stack" class="content-section secondary">
+                <div class="container-lg">
                     <h1>My Stack</h1>
-                    <div class="container-fluid d-flex justify-content-center">
+                    <div class="container-fluid">
                         <div class="row d-flex justify-content-center stack-icon">
                             <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center">
                                 <i class="devicon-python-plain"></i>
@@ -97,18 +107,18 @@
                 </div>
             </div>
 
-            <div class="content-section primary">
-                <div id="projects" class="container-lg content-section">
+            <div id="projects" class="content-section primary">
+                <div class="container-lg">
                     <h1>Projects</h1>
 
-                    <div class="container-fluid d-flex justify-content-center">
+                    <div class="container-fluid">
                         <div class="row d-flex justify-content-center">
                             <div class= "col-sm-10 col-md-8 d-flex justify-content-center align-items-center">
                                 <div class="card d-flex justify-content-center">
                                     <img src="C:\Users\hippl\OneDrive\Documents\Code\Projects\Portfolio\Pictures\GetFit.jpg" class="card-img-top" alt="GetFit Website Screenshot">
                                     <div class="card-body">
                                         <h5 class="card-title">GetFit: Nutrition Website</h5>
-                                        <p class="card-text">GetFit is a nutrition website that allows users to calculate their daily nutrient needs, build healthy meal plans, and lookup nutrition facts for their favorite foods. The site is built using <strong>Python</strong> and <strong>Flask</strong> on the backend, <strong>Javascript</strong> and <strong>jQuery</strong> of the front, and styled with Bootstrap. Nutrition information is pulled from the <strong>Nutritionix API</strong>.</p>
+                                        <p class="card-text">GetFit is a nutrition website that allows users to calculate their daily nutrient needs, build healthy meal plans, and lookup nutrition facts for their favorite foods. The site is built using <strong>Python</strong> and <strong>Flask</strong> on the backend, <strong>Javascript</strong> and <strong>jQuery</strong> of the front, and styled with Bootstrap. Nutrition information is pulled from the Nutritionix <strong>API</strong>.</p>
                                         <a href="#" class="btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
@@ -119,10 +129,10 @@
                 </div>
             </div>
 
-            <div class="content-section secondary">
-                <div id="courses" class="container-lg content-section">
+            <div id="courses" class="content-section secondary">
+                <div class="container-lg">
                     <h1>Courses</h1>
-                    <div class="container-fluid d-flex justify-content-center">
+                    <div class="container-fluid">
                         <div class="row d-flex justify-content-center">
 
                             <div class="col-lg-4 d-flex justify-content-center align-items-center">
@@ -150,8 +160,7 @@
                             </div>
 
                             <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                                
-                                    <img class="img-thumbnail" src="C:\Users\hippl\OneDrive\Documents\Code\Projects\Portfolio\Pictures\UMD.jpg" alt="Course Certificate">
+                                <img class="img-thumbnail" src="C:\Users\hippl\OneDrive\Documents\Code\Projects\Portfolio\Pictures\UMD.jpg" alt="Course Certificate">
                             </div>
                             <div class="col-lg-8 d-flex justify-content-center align-items-center">
                                 <p>
@@ -165,10 +174,10 @@
                 </div>
             </div>
 
-            <div class="content-section primary">
-                <div id="contact" class="container-lg content-section">
+            <div id="contact" class="content-section primary">
+                <div class="container-lg">
                     <h3>Contact Information</h3>
-                    <div class="container-fluid d-flex justify-content-center">
+                    <div class="container-fluid">
 
                     </div>
                 </div>
@@ -176,8 +185,10 @@
 
         </main>
 
-        <footer class="container-fluid d-flex justify-content-center align-items-center">
-            Here's the footer!
+        <footer class="container-fluid">
+            <div class="text-center">
+                Here's the footer!
+            </div>
         </footer>
     </body>
 

@@ -1,6 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h3 {
     text-align: center;
     padding-bottom: 50px;
+}
+
+header {
+    overflow: hidden;
 }
 
 .container-fluid {
@@ -66,12 +74,20 @@ h1, h3 {
     font-size: 125px;
 }
 
-#courses img { /* Not used */
-    width: 400px;
+#courses img {
+    max-width: 400px;
     height: auto;
     border: 1px solid lightgray;
 }
 
 .navbar {
     text-align: center!;
+}
+
+.height-max {
+    height: 100%;
+}
+
+.fa-chevron-down::before {
+    color: white;
 }
