@@ -26,7 +26,7 @@
 
     </head>
 
-    <body class="container-fluid">
+    <body class="container-fluid" data-spy="scroll" data-target="#site-nav" data-offset="70">
 
         <header class="container-fluid max-vert">
             <div id="intro" class="container-fluid img-full intro-img">
@@ -45,7 +45,7 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
+        <nav id="site-nav" class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#summary">Summary</a>
@@ -62,21 +62,21 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
-
             </ul>
         </nav>
 
         <main class="container-fluid">
+
             <div id="summary" class="content-section primary">
-                <div class="container-lg">
-                    <div class="container-fluid d-flex justify-content-center">
-                        <div class="text-center">
-                            <p>Motivated career-changer excited to make the jump from civil to software engineering. By adding technical programming knowledge to established management and communication skills, I intend to become a well-rounded, self-directed software developer. Passionate for web development by its accessibility and ease of use for the user, I enjoy writing code that can reach users across the world with just one "push".</p>
-                            <p>I have completed more than 20 projects in my six years as a project manager in construction. I understand the importance of pre-planning in the project life-cycle and can incorporate that into developing software products. Understanding your customer (the user) leads to a successful project (product). By collaborating with customers throughout the build process, I ensure expectations and outcomes are aligned.</p>
-                            <p>I hope to bring this user-based approach to a like-minded software development company that promotes a sustainable work culture. Check out my GitHub (contact info) and completed course certificates below.</p>
-                        </div>
+            <div class="container-lg">
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="text-center">
+                        <p>Motivated career-changer excited to make the jump from civil to software engineering. By adding technical programming knowledge to established management and communication skills, I intend to become a well-rounded, self-directed software developer. Passionate for web development by its accessibility and ease of use for the user, I enjoy writing code that can reach users across the world with just one "push".</p>
+                        <p>I have completed more than 20 projects in my six years as a project manager in construction. I understand the importance of pre-planning in the project life-cycle and can incorporate that into developing software products. Understanding your customer (the user) leads to a successful project (product). By collaborating with customers throughout the build process, I ensure expectations and outcomes are aligned.</p>
+                        <p>I hope to bring this user-based approach to a like-minded software development company that promotes a sustainable work culture. Check out my GitHub (contact info) and completed course certificates below.</p>
                     </div>
                 </div>
+            </div>
             </div>
 
             <div id="stack" class="content-section secondary">
@@ -85,11 +85,16 @@
                     <div class="container-fluid">
                         <div class="row d-flex justify-content-center stack-icon">
                             <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center">
-                                <i class="devicon-python-plain"></i>
+                                <a href="#stack">
+                                    <i class="devicon-python-plain"></i>
+                                </a>
                             </div>
-                            <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center">
+
+                            <div class="try col-sm-6 col-lg-3 d-flex justify-content-center align-items-center">
                                 <i class="devicon-javascript-plain"></i>
+                                <i class="fas fa-code"></i>
                             </div>
+
                             <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center">
                                 <i class="devicon-html5-plain"></i>
                             </div>
