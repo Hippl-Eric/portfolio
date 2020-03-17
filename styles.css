@@ -91,12 +91,13 @@ header {
 .fa-chevron-down::before {
     color: white;
 }
+
  /* Vertically center elements when font size increases */
 a.nav-link {
     position: relative!important;
     top: 50%!important;
     transform: translateY(-50%)!important;
-    transition-duration: .5s!important;
+    transition-duration: .2s!important;
 }
 
 /* Style active navbar item */
@@ -105,16 +106,19 @@ a.nav-link.active {
     font-size: 20pt!important;
 }
 
+/* Disable default anchor behavior on stack icons */
 #stack a.icon-anchor {
     text-decoration: none;
     color: currentColor;
 }
 
+/* Intial state of stack program language icons */
 #stack div.icon-cont i[class^="devicon"]{
     opacity: 1;
     transition: .5s ease;
 }
 
+/* Inital state of stack code icons */
 #stack div.icon-cont i[class^="fas"]{
     transition: .5s ease;
     opacity: 0;
@@ -123,40 +127,12 @@ a.nav-link.active {
     color: white;
 }
 
+/* Fade program language icons on hover */
 #stack div.icon-cont:hover i[class^="devicon"]{
     opacity: .8;
 }
 
+/* Show code icon on hover */
 #stack div.icon-cont:hover i[class^="fas"]{
     opacity: 1.0;
 }
-/*
-#stack i[class^="devicon"] {
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}
-*/
-/*
-#stack i[class^="devicon"]:hover {
-    opacity: .5;
-
-}
-*/
-/*
-.devicon-javascript-plain {
-}
-*/
-/*
-.fa-code {
-    position: absolute;
-    opacity: .5;
-    transition-timing-function: ease-in-out;
-    transition: 1s;
-    font-size: 50pt;
-}
-*/
-/*
-i.fa-code:hover {
-    opacity: 1;
-}
-*/
