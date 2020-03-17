@@ -105,24 +105,58 @@ a.nav-link.active {
     font-size: 20pt!important;
 }
 
-i[class^="devicon"] {
-    color: inherit; /* not working */
-    transition-duration: 1s;
+#stack a.icon-anchor {
+    text-decoration: none;
+    color: currentColor;
 }
 
-i[class^="devicon"]:hover {
+#stack div.icon-cont i[class^="devicon"]{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+#stack div.icon-cont i[class^="fas"]{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 30pt;
+    color: white;
+}
+
+#stack div.icon-cont:hover i[class^="devicon"]{
+    opacity: .8;
+}
+
+#stack div.icon-cont:hover i[class^="fas"]{
+    opacity: 1.0;
+}
+/*
+#stack i[class^="devicon"] {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+*/
+/*
+#stack i[class^="devicon"]:hover {
     opacity: .5;
 
 }
-
-i.fa-code {
+*/
+/*
+.devicon-javascript-plain {
+}
+*/
+/*
+.fa-code {
     position: absolute;
-    opacity: 0;
+    opacity: .5;
     transition-timing-function: ease-in-out;
     transition: 1s;
     font-size: 50pt;
 }
-
+*/
+/*
 i.fa-code:hover {
     opacity: 1;
 }
+*/
