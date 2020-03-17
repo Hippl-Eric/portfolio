@@ -113,13 +113,13 @@ a.nav-link.active {
 }
 
 /* Intial state of stack program language icons */
-#stack div.icon-cont i[class^="devicon"]{
+#stack div.icon-cont i[class^="devicon"] {
     opacity: 1;
     transition: .5s ease;
 }
 
 /* Inital state of stack code icons */
-#stack div.icon-cont i[class^="fas"]{
+#stack div.icon-cont i[class^="fas"] {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -128,11 +128,17 @@ a.nav-link.active {
 }
 
 /* Fade program language icons on hover */
-#stack div.icon-cont:hover i[class^="devicon"]{
+#stack div.icon-cont:hover i[class^="devicon"] {
     opacity: .8;
 }
 
 /* Show code icon on hover */
-#stack div.icon-cont:hover i[class^="fas"]{
+#stack div.icon-cont:hover i[class^="fas"] {
     opacity: 1.0;
+}
+
+/* Set max-width for boostrap image fluid in contact */
+ #contact img.img-fluid {
+    width: 100%!important;
+    max-width: 350px!important;
 }
