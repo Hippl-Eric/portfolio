@@ -1,150 +1,155 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    position: relative;
+  position: relative;
 }
 
 h1, h3 {
-    text-align: center;
-    padding-bottom: 50px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 header {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .container-fluid {
-    padding: 0px; /* Remove Bootstrap padding*/
+  padding: 0px;
+  /* Remove Bootstrap padding*/
 }
 
 .col-sm-6, .col-lg-3, .col-lg-4, .col-lg-8, .col-sm-4, .col-sm-8 {
-    padding-bottom: 50px; /* Add padding to Bootstrap columns */
+  padding-bottom: 50px;
+  /* Add padding to Bootstrap columns */
 }
 
 /* Fit element max vertical height of viewport*/
 .max-vert {
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
 }
 
 /* Position text center, vertical middle */
-.center-middle { /* Not used */
-    position: relative;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+.center-middle {
+  /* Not used */
+  position: relative;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .content-section {
-    padding-top: 100px;
-    min-height: 100vh;
+  padding-top: 100px;
+  min-height: 100vh;
 }
 
 .primary {
-    background-color: gray;
+  background-color: gray;
 }
 
 .secondary {
-    background-color: coral;
+  background-color: coral;
 }
 
 /* Fit a background image to center, full height of element */
 .img-full {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 /* Background image for intro section */
 .intro-img {
-    background-image: url("Pictures/Mt Mitchell.jpg");
+  background-image: url("Pictures/Mt Mitchell.jpg");
 }
 
-.box { /* Not used */
-    height: 200px;
-    width: 200px;
-    padding: 15px;
-    margin: 30px;
-    background-color: blue;
+.box {
+  /* Not used */
+  height: 200px;
+  width: 200px;
+  padding: 15px;
+  margin: 30px;
+  background-color: blue;
 }
 
 .stack-icon {
-    font-size: 125px;
+  font-size: 125px;
 }
 
 #courses img {
-    /*width: auto;*/
-    /*max-width: 400px;*/
-    /*height: auto;*/
-    border: 1px solid lightgray;
+  /*width: auto;*/
+  /*max-width: 400px;*/
+  /*height: auto;*/
+  border: 1px solid lightgray;
 }
 
 .height-max {
-    height: 100%;
+  height: 100%;
 }
 
 /* Arrow navigation in header */
 .fa-chevron-down::before {
-    color: white;
+  color: white;
 }
 
 /* Disable default anchor behavior on icons */
 a.icon-anchor {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 
 /* Intial state of stack program language icons */
-#stack div.icon-cont i[class^="devicon"] {
-    opacity: 1;
-    transition: .5s ease;
+#stack div.icon-cont i[class^=devicon] {
+  opacity: 1;
+  transition: 0.5s ease;
 }
 
 /* Inital state of stack code icons */
-#stack div.icon-cont i[class^="fas"] {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    font-size: 30pt;
-    color: white;
+#stack div.icon-cont i[class^=fas] {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 30pt;
+  color: white;
 }
 
 /* Fade program language icons on hover */
-#stack div.icon-cont:hover i[class^="devicon"] {
-    opacity: .8;
+#stack div.icon-cont:hover i[class^=devicon] {
+  opacity: 0.8;
 }
 
 /* Show code icon on hover */
-#stack div.icon-cont:hover i[class^="fas"] {
-    opacity: 1.0;
+#stack div.icon-cont:hover i[class^=fas] {
+  opacity: 1;
 }
 
 /* Set max-width for boostrap image fluid in contact */
- #contact img.img-fluid {
-    width: 100%!important;
-    max-width: 350px!important;
+#contact img.img-fluid {
+  width: 100% !important;
+  max-width: 350px !important;
 }
 
 /* Contact anchor icons */
 #contact a {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Contact icons */
 #contact i {
-    font-size: 30pt;
-    transition: .5s ease;
+  font-size: 30pt;
+  transition: 0.5s ease;
 }
 
 /* Contact icon hover */
 #contact i:hover {
-    color: white;
+  color: white;
 }
 
+/*# sourceMappingURL=styles.css.map */
