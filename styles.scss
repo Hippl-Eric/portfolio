@@ -16,28 +16,19 @@ header {
 }
 
 .container-fluid {
-    padding: 0px; /* Remove Bootstrap padding*/
+    /* Remove Bootstrap padding*/
+    padding: 0px;
 }
 
 .col-sm-6, .col-lg-3, .col-lg-4, .col-lg-8, .col-sm-4, .col-sm-8 {
-    padding-bottom: 50px; /* Add padding to Bootstrap columns */
+    /* Add padding to Bootstrap columns */
+    padding-bottom: 50px;
 }
 
 /* Fit element max vertical height of viewport*/
 .max-vert {
     height: 100vh;
     position: relative;
-}
-
-/* Position text center, vertical middle */
-.center-middle { /* Not used */
-    position: relative;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .content-section {
@@ -66,22 +57,12 @@ header {
     background-image: url("Pictures/Mt Mitchell.jpg");
 }
 
-.box { /* Not used */
-    height: 200px;
-    width: 200px;
-    padding: 15px;
-    margin: 30px;
-    background-color: blue;
-}
-
+/* Icons in stack section */
 .stack-icon {
     font-size: 125px;
 }
 
 #courses img {
-    /*width: auto;*/
-    /*max-width: 400px;*/
-    /*height: auto;*/
     border: 1px solid lightgray;
 }
 
