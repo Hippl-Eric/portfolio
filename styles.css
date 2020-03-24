@@ -1,3 +1,4 @@
+/*@import "bootstrap";*/
 html {
   scroll-behavior: smooth;
 }
@@ -15,25 +16,75 @@ header {
   overflow: hidden;
 }
 
-.container-fluid {
-  /* Remove Bootstrap padding*/
-  padding: 0px;
+i.header-arrow {
+  /* Arrow navigation in header */
+  color: white;
 }
 
-.col-sm-6, .col-lg-3, .col-lg-4, .col-lg-8, .col-sm-4, .col-sm-8 {
-  /* Add padding to Bootstrap columns */
-  padding-bottom: 50px;
+a.icon-anchor {
+  /* Disable default anchor behavior on icons */
+  text-decoration: none;
+  color: currentColor;
 }
 
-/* Fit element max vertical height of viewport*/
-.max-vert {
-  height: 100vh;
-  position: relative;
+#stack i {
+  /* Icons in stack section */
+  font-size: 125px;
 }
 
-.content-section {
-  padding-top: 100px;
-  min-height: 100vh;
+#stack div.icon-cont i[class^="devicon"] {
+  /* Initial state of stack program language icons */
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#stack div.icon-cont i[class^="fas"] {
+  /* Inital state of stack code icons */
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 30pt;
+  color: white;
+}
+
+#stack div.icon-cont:hover i[class^="devicon"] {
+  /* Fade program language icons on hover */
+  opacity: .8;
+}
+
+#stack div.icon-cont:hover i[class^="fas"] {
+  /* Show code icon on hover */
+  opacity: 1.0;
+}
+
+#courses img {
+  border: 1px solid lightgray;
+}
+
+#contact .img-fluid {
+  /* Set max-width for boostrap image fluid in contact */
+  width: 100% !important;
+  max-width: 350px !important;
+}
+
+#contact a {
+  /* Contact anchor icons */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contact i {
+  /* Contact icons */
+  font-size: 30pt;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#contact i:hover {
+  /* Contact icon hover */
+  color: white;
 }
 
 .primary {
@@ -44,89 +95,41 @@ header {
   background-color: coral;
 }
 
-/* Fit a background image to center, full height of element */
-.img-full {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+.container-fluid {
+  /* Remove Bootstrap padding*/
+  padding: 0px;
 }
 
-/* Background image for intro section */
-.intro-img {
-  background-image: url("Pictures/Mt Mitchell.jpg");
+div[class^="col-"] {
+  /* Access all Bootstrap columns */
+  padding-bottom: 50px;
 }
 
-/* Icons in stack section */
-.stack-icon {
-  font-size: 125px;
-}
-
-#courses img {
-  border: 1px solid lightgray;
+.max-vert {
+  /* Fit element max vertical height of viewport*/
+  height: 100vh;
+  position: relative;
 }
 
 .height-max {
   height: 100%;
 }
 
-/* Arrow navigation in header */
-.fa-chevron-down::before {
-  color: white;
+.img-full {
+  /* Fit a background image to center, full height of element */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
-/* Disable default anchor behavior on icons */
-a.icon-anchor {
-  text-decoration: none;
-  color: currentColor;
+.content-section {
+  padding-top: 100px;
+  min-height: 100vh;
 }
 
-/* Intial state of stack program language icons */
-#stack div.icon-cont i[class^=devicon] {
-  opacity: 1;
-  transition: 0.5s ease;
+.intro-img {
+  /* Background image for intro section */
+  background-image: url("Pictures/Mt Mitchell.jpg");
 }
-
-/* Inital state of stack code icons */
-#stack div.icon-cont i[class^=fas] {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  font-size: 30pt;
-  color: white;
-}
-
-/* Fade program language icons on hover */
-#stack div.icon-cont:hover i[class^=devicon] {
-  opacity: 0.8;
-}
-
-/* Show code icon on hover */
-#stack div.icon-cont:hover i[class^=fas] {
-  opacity: 1;
-}
-
-/* Set max-width for boostrap image fluid in contact */
-#contact img.img-fluid {
-  width: 100% !important;
-  max-width: 350px !important;
-}
-
-/* Contact anchor icons */
-#contact a {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Contact icons */
-#contact i {
-  font-size: 30pt;
-  transition: 0.5s ease;
-}
-
-/* Contact icon hover */
-#contact i:hover {
-  color: white;
-}
-
 /*# sourceMappingURL=styles.css.map */
