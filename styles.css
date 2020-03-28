@@ -27,6 +27,15 @@ a.icon-anchor {
   color: currentColor;
 }
 
+#intro .caption {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#intro .caption .name {
+  font-size: 200%;
+}
+
 #stack i {
   /* Icons in stack section */
   font-size: 125px;
@@ -107,7 +116,7 @@ div[class^="col-"] {
 
 .max-vert {
   /* Fit element max vertical height of viewport*/
-  height: 100vh;
+  height: calc(100vh - 56px);
   position: relative;
 }
 
@@ -130,6 +139,7 @@ div[class^="col-"] {
 
 .intro-img {
   /* Background image for intro section */
-  background-image: url("Pictures/Mt Mitchell.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("Pictures/Mt Mitchell.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Pictures/Mt Mitchell.jpg");
 }
 /*# sourceMappingURL=styles.css.map */
