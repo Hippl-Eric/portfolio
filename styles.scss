@@ -7,6 +7,8 @@ html {
 
 body {
     position: relative;
+    color: $primary-font-color;
+
 }
 
 h1, h3 {
@@ -20,7 +22,7 @@ header {
 
 i.header-arrow {
     /* Arrow navigation in header */
-    color: white;
+    color: $header-color;
 }
 
 a.icon-anchor {
@@ -32,7 +34,7 @@ a.icon-anchor {
 #intro {
     .caption {
         font-size: 1.25rem;
-        color: white;
+        color: $header-color;
 
         .name {
             font-size: 200%;
@@ -58,7 +60,7 @@ a.icon-anchor {
         opacity: 0;
         position: absolute;
         font-size: 30pt;
-        color: white;
+        color: $primary-font-color;
     }
 }
 
@@ -71,6 +73,7 @@ a.icon-anchor {
     i[class^="fas"] {
         /* Show code icon on hover */
         opacity: 1.0;
+        color: $secondary-font-color;
     }
 }
 
@@ -98,20 +101,25 @@ a.icon-anchor {
 
 #contact i:hover {
    /* Contact icon hover */
-   color: white;
+   color: $secondary-font-color;
 }
 
 .primary {
-    background-color: gray;
+    background-color: $primary-background;
 }
 
 .secondary {
-    background-color: coral;
+    background-color: $secondary-background;
 }
 
 .container-fluid {
     /* Remove Bootstrap padding*/
     padding: 0px;
+}
+
+.card {
+    /*  */
+    background-color: $card-background;
 }
 
 div[class^="col-"] {

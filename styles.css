@@ -5,6 +5,7 @@ html {
 
 body {
   position: relative;
+  color: white;
 }
 
 h1, h3 {
@@ -66,6 +67,7 @@ a.icon-anchor {
 #stack div.icon-cont:hover i[class^="fas"] {
   /* Show code icon on hover */
   opacity: 1.0;
+  color: dimgray;
 }
 
 #courses img {
@@ -93,20 +95,25 @@ a.icon-anchor {
 
 #contact i:hover {
   /* Contact icon hover */
-  color: white;
+  color: dimgray;
 }
 
 .primary {
-  background-color: gray;
+  background-color: #3D5484;
 }
 
 .secondary {
-  background-color: coral;
+  background-color: #5A7EB5;
 }
 
 .container-fluid {
   /* Remove Bootstrap padding*/
   padding: 0px;
+}
+
+.card {
+  /*  */
+  background-color: rgba(0, 0, 0, 0.363);
 }
 
 div[class^="col-"] {
