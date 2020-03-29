@@ -1,14 +1,13 @@
-/*@import "bootstrap";*/
-@import 'summer-varibles';
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
     position: relative;
-    color: $primary-font-color;
+}
 
+header, main {
+    color: $primary-font-color;
 }
 
 h1, h3 {
@@ -118,8 +117,25 @@ a.icon-anchor {
 }
 
 .card {
-    /*  */
+    /* Bootstrap card */
     background-color: $card-background;
+}
+
+.navbar {
+    /* Bootstrap navbar */
+    background-color: $nav-background;
+
+    .nav-link {
+        color: $nav-font-color;
+    }
+
+    .nav-link:hover {
+        color: $nav-hover-font-color;
+    }
+
+    .nav-link:active {
+        color: $nav-active-font-color;
+    }
 }
 
 div[class^="col-"] {

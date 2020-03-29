@@ -1,10 +1,12 @@
-/*@import "bootstrap";*/
 html {
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
+}
+
+header, main {
   color: white;
 }
 
@@ -112,8 +114,25 @@ a.icon-anchor {
 }
 
 .card {
-  /*  */
+  /* Bootstrap card */
   background-color: rgba(0, 0, 0, 0.363);
+}
+
+.navbar {
+  /* Bootstrap navbar */
+  background-color: #343a40;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar .nav-link:active {
+  color: #fff;
 }
 
 div[class^="col-"] {
@@ -146,7 +165,7 @@ div[class^="col-"] {
 
 .intro-img {
   /* Background image for intro section */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("Pictures/Mt Mitchell.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Pictures/Mt Mitchell.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("Pictures/NH.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Pictures/NH.jpg");
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=winter-styles.css.map */

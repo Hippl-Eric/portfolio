@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+header, main {
+  color: white;
+}
+
+h1, h3 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+header {
+  overflow: hidden;
+}
+
+i.header-arrow {
+  /* Arrow navigation in header */
+  color: white;
+}
+
+a.icon-anchor {
+  /* Disable default anchor behavior on icons */
+  text-decoration: none;
+  color: currentColor;
+}
+
+#intro .caption {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#intro .caption .name {
+  font-size: 200%;
+}
+
+#stack i {
+  /* Icons in stack section */
+  font-size: 125px;
+}
+
+#stack div.icon-cont i[class^="devicon"] {
+  /* Initial state of stack program language icons */
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#stack div.icon-cont i[class^="fas"] {
+  /* Inital state of stack code icons */
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 30pt;
+  color: white;
+}
+
+#stack div.icon-cont:hover i[class^="devicon"] {
+  /* Fade program language icons on hover */
+  opacity: .8;
+}
+
+#stack div.icon-cont:hover i[class^="fas"] {
+  /* Show code icon on hover */
+  opacity: 1.0;
+  color: dimgray;
+}
+
+#courses img {
+  border: 1px solid lightgray;
+}
+
+#contact .img-fluid {
+  /* Set max-width for boostrap image fluid in contact */
+  width: 100% !important;
+  max-width: 350px !important;
+}
+
+#contact a {
+  /* Contact anchor icons */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contact i {
+  /* Contact icons */
+  font-size: 30pt;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#contact i:hover {
+  /* Contact icon hover */
+  color: dimgray;
+}
+
+.primary {
+  background-color: #3D5484;
+}
+
+.secondary {
+  background-color: #5A7EB5;
+}
+
+.container-fluid {
+  /* Remove Bootstrap padding*/
+  padding: 0px;
+}
+
+.card {
+  /* Bootstrap card */
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.navbar {
+  /* Bootstrap navbar */
+  background-color: #343a40;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar .nav-link:active {
+  color: #fff;
+}
+
+div[class^="col-"] {
+  /* Access all Bootstrap columns */
+  padding-bottom: 50px;
+}
+
+.max-vert {
+  /* Fit element max vertical height of viewport*/
+  height: calc(100vh - 56px);
+  position: relative;
+}
+
+.height-max {
+  height: 100%;
+}
+
+.img-full {
+  /* Fit a background image to center, full height of element */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.content-section {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.intro-img {
+  /* Background image for intro section */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("Pictures/Mt Mitchell.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Pictures/Mt Mitchell.jpg");
+}
+/*# sourceMappingURL=summer-styles.css.map */
