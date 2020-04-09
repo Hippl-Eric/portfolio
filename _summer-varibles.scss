@@ -1,16 +1,22 @@
-$intro-img: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("Pictures/Mt Mitchell.jpg");
+$intro-img: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),  url("Pictures/Mt Mitchell.jpg");
 
-$primary-background: #3D5484;
-$secondary-background: #5A7EB5;
+$primary-background: #F5F5F5;
+$secondary-background: #DEDEDE;
 
-$primary-font-color: white;
-$secondary-font-color: rgb(105, 105, 105);
+$primary-font-color: rgb(53, 73, 114);
+$secondary-font-color: rgb(110, 152, 236);
 
-$header-color: white;
+$header-color: rgb(255, 255, 255);
 
 $card-background: rgba(0, 0, 0, 0.363);
+$card-font-color: white;
 
-$nav-background: #343a40;
+$nav-background: #3D5484!important;
 $nav-font-color: rgba(255,255,255,.5);
 $nav-hover-font-color: rgba(255,255,255,.75);
 $nav-active-font-color: #fff;
+
+$btn-font-color: #f8f9fa;
+$btn-hover-font-color: #f8f9fa!important;
+$btn-border: #f8f9fa;
+$btn-hover-background: #3D5484!important;

@@ -4,10 +4,16 @@ html {
 
 body {
     position: relative;
+    font-family: $main-font;
+
 }
 
 header, main {
     color: $primary-font-color;
+}
+
+main {
+    font-size: $main-font-size;
 }
 
 h1, h3 {
@@ -116,26 +122,38 @@ a.icon-anchor {
     padding: 0px;
 }
 
-.card {
-    /* Bootstrap card */
-    background-color: $card-background;
-}
-
 .navbar {
     /* Bootstrap navbar */
     background-color: $nav-background;
 
     .nav-link {
         color: $nav-font-color;
-    }
 
-    .nav-link:hover {
-        color: $nav-hover-font-color;
-    }
+        &:hover {
+            color: $nav-hover-font-color;
+        }
 
-    .nav-link:active {
-        color: $nav-active-font-color;
+        &:active {
+            color: $nav-active-font-color;
+        }
     }
+}
+
+.card {
+    /* Bootstrap card */
+    background-color: $card-background;
+    color: $card-font-color;
+
+    .btn-outline-light {
+        color: $btn-font-color;
+        border-color: $btn-border;
+    
+        &:hover, &:active {
+            color: $btn-hover-font-color;
+            background-color: $btn-hover-background;
+        }
+    }
+    
 }
 
 div[class^="col-"] {
@@ -169,4 +187,9 @@ div[class^="col-"] {
 .intro-img {
     /* Background image for intro section */
     background-image: $intro-img;
+}
+
+.title {
+    font-size: $title-font-size;
+    font-weight: bold;
 }
