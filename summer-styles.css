@@ -1,10 +1,10 @@
 html {
   scroll-behavior: smooth;
+  font-family: helvetica !important;
 }
 
 body {
   position: relative;
-  font-family: helvetica !important;
 }
 
 header, main {
@@ -17,7 +17,7 @@ main {
 
 h1, h3 {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 1.5em;
 }
 
 header {
@@ -44,9 +44,8 @@ a.icon-anchor {
   font-size: 200%;
 }
 
-#stack i {
-  /* Icons in stack section */
-  font-size: 125px;
+#stack div.icon-cont {
+  font-size: 8rem;
 }
 
 #stack div.icon-cont i[class^="devicon"] {
@@ -62,7 +61,7 @@ a.icon-anchor {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  font-size: 30pt;
+  font-size: 40%;
   color: #354972;
 }
 
@@ -77,25 +76,26 @@ a.icon-anchor {
   color: #6e98ec;
 }
 
-#courses img {
-  border: 1px solid lightgray;
+#courses .img-thumbnail {
+  /* Set max-width for boostrap image thumbnail in courses */
+  width: 100% !important;
+  max-width: 20em !important;
 }
 
 #contact .img-fluid {
   /* Set max-width for boostrap image fluid in contact */
   width: 100% !important;
-  max-width: 350px !important;
+  max-width: 20em !important;
 }
 
 #contact a {
   /* Contact anchor icons */
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 .5em 0 .5em;
+  font-size: 2.5rem;
 }
 
 #contact i {
   /* Contact icons */
-  font-size: 30pt;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -115,7 +115,7 @@ a.icon-anchor {
 
 .container-fluid {
   /* Remove Bootstrap padding*/
-  padding: 0px;
+  padding: 0;
 }
 
 .navbar {
@@ -151,9 +151,16 @@ a.icon-anchor {
   background-color: #3D5484 !important;
 }
 
+.btn {
+  /* Bootstrap button */
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  /* Remove the default shadow */
+}
+
 div[class^="col-"] {
   /* Access all Bootstrap columns */
-  padding-bottom: 50px;
+  padding-bottom: 3em;
 }
 
 .max-vert {
@@ -175,7 +182,7 @@ div[class^="col-"] {
 }
 
 .content-section {
-  padding-top: 100px;
+  padding-top: 6.25rem;
   min-height: 100vh;
 }
 
