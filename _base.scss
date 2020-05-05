@@ -12,7 +12,7 @@ header, main {
     color: $primary-font-color;
 }
 
-main {
+nav, main {
     font-size: $main-font-size;
 }
 
@@ -36,11 +36,34 @@ a.icon-anchor {
     color: currentColor;
 }
 
+#site-nav {
+    /* Bootstrap navbar */
+    background-color: $nav-background;
+
+    .brand-image {
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav-link {
+        color: $nav-font-color;
+
+        &:hover {
+            color: $nav-hover-font-color;
+        }
+
+        &:active {
+            color: $nav-active-font-color;
+        }
+    }
+}
+
 #theme-button {
+    /* Site stylesheet button fixed bottom right */
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 6px 16px 6px 0;
+    margin: 11px 16px 11px 0;
     z-index: 1021; /* Postion above navbar */
     height: 44px;
     width: 44px;
@@ -167,23 +190,6 @@ a.icon-anchor {
     padding: 0;
 }
 
-.navbar {
-    /* Bootstrap navbar */
-    background-color: $nav-background;
-
-    .nav-link {
-        color: $nav-font-color;
-
-        &:hover {
-            color: $nav-hover-font-color;
-        }
-
-        &:active {
-            color: $nav-active-font-color;
-        }
-    }
-}
-
 .card {
     /* Bootstrap card */
     background-color: $card-background;
@@ -213,7 +219,7 @@ div[class^="col-"] {
 
 .max-vert {
     /* Fit element max vertical height of viewport*/
-    height: calc(100vh - 56px);
+    height: calc(100vh - 66px);
     position: relative;
 }
 
