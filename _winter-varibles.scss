@@ -7,14 +7,23 @@ $primary-font-color: white;
 $secondary-font-color: rgb(105, 105, 105);
 
 $header-color: white;
+$header-arrow-color: white;
 
-$card-background: rgba(0, 0, 0, 0.363);
-$card-font-color: inherit;
+$header-btn-font-color: #f8f9fa;
+$header-btn-hover-font-color: #212529!important;
+$header-btn-border: #f8f9fa;
+$header-btn-hover-background: #f8f9fa!important;
 
 $nav-background: #343a40;
 $nav-font-color: rgba(255,255,255,.5);
 $nav-hover-font-color: rgba(255,255,255,.75);
 $nav-active-font-color: #fff;
+
+$theme-btn-background: white;
+$theme-btn-font-color: #343a40;
+
+$card-background: rgba(0, 0, 0, 0.363);
+$card-font-color: inherit;
 
 $btn-font-color: #f8f9fa;
 $btn-hover-font-color: #212529;

@@ -23,17 +23,47 @@ h1, h3 {
 
 header {
     overflow: hidden;
-}
 
-i.header-arrow {
-    /* Arrow navigation in header */
-    color: $header-color;
+    .header-arrow {
+        /* Arrow navigation in header */
+        color: $header-arrow-color;
+    }
 }
 
 a.icon-anchor {
     /* Disable default anchor behavior on icons */
     text-decoration: none;
     color: currentColor;
+}
+
+#theme-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 6px 16px 6px 0;
+    z-index: 1021; /* Postion above navbar */
+    height: 44px;
+    width: 44px;
+    background-color: $theme-btn-background;
+    border-radius: 100%;
+    cursor: pointer;
+
+    .icon-anchor {
+        font-size: 1.8rem;
+        color: $theme-btn-font-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .summer-icon {
+            display: inline-block;
+        }
+
+        .winter-icon {
+            display: none;
+        }
+    }
 }
 
 #intro {
@@ -45,11 +75,21 @@ a.icon-anchor {
             font-size: 200%;
         }
     }
+
+    .header-button {
+        color: $header-btn-font-color;
+        border-color: $header-btn-border;
+    
+        &:hover, &:active {
+            color: $header-btn-hover-font-color;
+            background-color: $header-btn-hover-background;
+        }
+    }
 }
 
-#summary {
+#summary-description {
     font-size: $responsive-font-lg;
-    
+    margin-bottom: 3em;
 }
 
 #stack div.icon-cont {
@@ -90,26 +130,28 @@ a.icon-anchor {
    max-width: 20em!important;
 }
 
-#contact .img-fluid {
-    /* Set max-width for boostrap image fluid in contact */
-   width: 100%!important;
-   max-width: 20em!important;
-}
+#contact {
+    .img-fluid {
+        /* Set max-width for boostrap image fluid in contact */
+        width: 100%!important;
+        max-width: 20em!important;
+    }
 
-#contact a {
-   /* Contact anchor icons */
-   margin: 0 .5em 0 .5em;
-   font-size: 2.5rem;
-}
+   a {
+        /* Contact anchor icons */
+        margin: 0 .5em 0 .5em;
+        font-size: 2.5rem;
+    }
 
-#contact i {
-   /* Contact icons */
-   transition: .5s ease;
-}
+    i {
+        /* Contact icons */
+        transition: .5s ease;
 
-#contact i:hover {
-   /* Contact icon hover */
-   color: $secondary-font-color;
+        &:hover {
+            /* Contact icon hover */
+            color: $secondary-font-color;
+        }
+    }
 }
 
 .primary {
@@ -201,28 +243,4 @@ div[class^="col-"] {
 .title {
     font-size: $title-font-size;
     font-weight: bold;
-}
-
-.description {
-    
-}
-
-.abs-container {
-    position: sticky;
-    top: 50;
-    right: 0;
-    z-index: 1;
-
-}
-
-.theme-toggle {
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    margin: 10px;
-    background-color: blue;
-    position: sticky;
-    top: 90%;
-    right: 0;
-    z-index: 1;
 }

@@ -6,15 +6,24 @@ $secondary-background: #DEDEDE;
 $primary-font-color: rgb(53, 73, 114);
 $secondary-font-color: rgb(110, 152, 236);
 
-$header-color: rgb(255, 255, 255);
+$header-color: rgb(41, 41, 41);
+$header-arrow-color: white;
 
-$card-background: rgba(0, 0, 0, 0.363);
-$card-font-color: white;
+$header-btn-font-color: $header-color;
+$header-btn-hover-font-color: #f8f9fa!important;
+$header-btn-border: $header-color;
+$header-btn-hover-background: $header-color!important;
 
 $nav-background: #3D5484!important;
 $nav-font-color: rgba(255,255,255,.5);
 $nav-hover-font-color: rgba(255,255,255,.75);
 $nav-active-font-color: #fff;
+
+$theme-btn-background: #343a40;
+$theme-btn-font-color: white;
+
+$card-background: rgba(0, 0, 0, 0.363);
+$card-font-color: white;
 
 $btn-font-color: #f8f9fa;
 $btn-hover-font-color: #f8f9fa!important;
