@@ -147,6 +147,25 @@ a.icon-anchor {
     }
 }
 
+#projects {
+    .card {
+        /* Bootstrap card */
+        background-color: $card-background;
+        color: $card-font-color;
+    
+        .btn-outline-light {
+            color: $card-btn-font-color;
+            border-color: $card-btn-border;
+        
+            &:hover, &:active {
+                color: $card-btn-hover-font-color;
+                background-color: $card-btn-hover-background;
+            }
+        }
+        
+    }
+}
+
 #courses .img-thumbnail {
     /* Set max-width for boostrap image thumbnail in courses */
    width: 100%!important;
@@ -190,23 +209,6 @@ a.icon-anchor {
     padding: 0;
 }
 
-.card {
-    /* Bootstrap card */
-    background-color: $card-background;
-    color: $card-font-color;
-
-    .btn-outline-light {
-        color: $btn-font-color;
-        border-color: $btn-border;
-    
-        &:hover, &:active {
-            color: $btn-hover-font-color;
-            background-color: $btn-hover-background;
-        }
-    }
-    
-}
-
 .btn {
     /* Bootstrap button */
     box-shadow: unset!important; /* Remove the default shadow */
@@ -237,7 +239,7 @@ div[class^="col-"] {
 
 .content-section {
     padding-top: 6.25rem;
-    min-height: 100vh;
+    padding-bottom: 6.25rem;
     position: relative;
 }
 
