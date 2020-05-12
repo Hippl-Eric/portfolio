@@ -12,14 +12,14 @@ $(document).ready(function(){
         let winterIcon = themeButton.querySelector(".winter-icon");
         
         // Switch to winter mode
-        if (sheet.getAttribute("href") == "summer-styles.css"){
-            sheet.setAttribute("href", "winter-styles.css");
+        if (sheet.getAttribute("href") == "/css/summer-styles.css"){
+            sheet.setAttribute("href", "/css/winter-styles.css");
             summerIcon.style.display = "none";
             winterIcon.style.display = "inline-block"
         }
         // Switch back to summer mode
         else {
-            sheet.setAttribute("href", "summer-styles.css");
+            sheet.setAttribute("href", "/css/summer-styles.css");
             summerIcon.style.display = "inline-block";
             winterIcon.style.display = "none";
         }
